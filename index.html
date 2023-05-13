@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login and Sign Up Form </title>
+    <link rel="stylesheet" href="stle.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/ben.png">
+</head>
+<body>
+    <!--Header-->
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">MPanpalli</a>
+        <ul class="nav_items">
+            <dt class="nav_item">
+                <a href="#" class="nav_link">Home</a>
+                <a href="#" class="nav_link">Product</a>
+                <a href="#" class="nav_link">Services</a>
+                <a href="#" class="nav_link">Contact Us</a>
+            </dt>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="home">
+    <div class="form_container">
+        <i class="fa-solid fa-xmark fa-beat-fade form_close" style="color: #0b0217;"></i>
+
+        <!-- LOGIN-->
+
+        <div class="form login_form">
+            <form action="#">
+                <h2>Login</h2>
+
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your mail" required>
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Enter your password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pw_hide"></i>
+                </div>
+
+                <div class="option_field">
+                    <span class="checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot Me!</a>
+                </div>
+
+                <button class="button">Login Now</button>
+
+
+                <div class="login_signup">
+                    Don't have an account? <a href="#" id="signup">Sign up</a>
+                </div>
+            </form>
+        </div>
+
+
+        <!--Sugn Up-->
+        <div class="form signup_form">
+            <form action="#">
+                <h2>SignUp</h2>
+
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your mail" required>
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Create password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pw_hide"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Confirm password" required>
+                    <i class="fa-solid fa-lock password"></i>
+                    <i class="fa-solid fa-eye-slash pw_hide"></i>
+                </div>
+
+
+                <button class="button">SignUp Now</button>
+
+
+                <div class="login_signup">Already have an account? <a href="#" id="login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
